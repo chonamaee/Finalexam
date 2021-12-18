@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final exam</title>
+</head>
+ <style>
+     h1 {
+          text-align: center;
+     }
+.container > div {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+ section{
+     margin-right:  20px;
+     background: gray;
+     padding-left:  15x;
+
+ }
+ .container{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     position:relative;
+     height: 400px;
+
+ }
+ h2 {
+     text-align:  right;
+     color: rgb(15, 15, 15);
+
+ }
+  span{
+       padding: 10px 25px;
+       background: gray;
+  }
+
+  /*tablet*/
+  @media (min-width: 768px) and (max-width: 991px){
+      section:last-child{
+      position: absolute;
+      width: 78%;
+      bottom: -83px;
+
+      }
+  }
+
+/*mobile*/
+@media (max-width: 767px){
+
+        .container{
+            margin-top: 100px;
+
+        }
+        section{
+            padding: 0;
+            padding-left:15px;
+            padding-bottom: 15px;
+        }
+        .container > div{
+             display: inline-block;
+        }
+        span{
+            padding: 10px;
+
+        }
+        h2 {
+            padding: 15px;
+            padding-right: 0;
+        }
+}
+.sushi{
+    background-color: yellow;
+}
+.beef{
+    background-color: red;
+}
+.chicken{
+    background-color: tomato;
+}
+
+</style>
+<body>
+    <div class="container">
+    <h1>
+        Our Menu
+    </h1>
+<div>
+    <section>
+            <h2><span class= "chicken">Chicken</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum at provident aliquam nostrum, exercitationem ipsa inventore quis aut, sint dolorum eius. Adipisci voluptates ipsum optio atque nam doloribus voluptas architecto?</p>
+  </section>
+  <section>
+      <h2><span class="beef">Beef</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque rerum praesentium similique quaerat odit sit voluptas, molestias ratione tenetur dicta illo est iste repellendus nesciunt quo odio beatae eius?</p>
+  </section>
+  <section>
+      <h2><span class="sushi">Sushi</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, minima maiores nihil veritatis hic sit libero doloribus consequatur praesentium accusantium dicta. Recusandae, ullam sint nostrum animi aliquam nemo rem sunt!</p>
+  </section>
+</div>
+</div>
+</body>
+</html>
